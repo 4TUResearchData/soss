@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "test"
+version = "1"
+description = "x"
+authors = ["carlosug <c.utrilla.guerrero@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+click = "8.0.4"
+cruft = "^2.12.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

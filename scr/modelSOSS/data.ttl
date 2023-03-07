@@ -1,0 +1,6 @@
+@prefix ns1: <https://w3id.org/linkml/examples/softinfo/:> .
+
+[] a ns1:Software ;
+    ns1:id "DOI:https://doi.org/10.4121/21557148.v1" ;
+    ns1:title "Python Scripts used in the study" .
+

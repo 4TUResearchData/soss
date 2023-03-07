@@ -1,0 +1,1 @@
+https://yuml.me/diagram/nofunky;dir:TB/class/[Container]++- softwares 0..*>[Software|id:string %3F;title:string %3F;dependency:string %3F;function:string %3F;input:string %3F;output:string %3F],[Container]
