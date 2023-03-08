@@ -43,16 +43,16 @@ Concepts and properties are annotated with:
 * [ML Schedma Core Specification](http://ml-schema.github.io/documentation/ML%20Schema.html)
 
 #### Data Model
-Despicts the elements of a knowledge graph for the research software artefacts:
+Explaining the elements of a knowledge graph for the research software artefacts:
 * Source code repo: entity that host +1 packages/module
 * Package: a sub-module that provides a reusable piece of software
 * Version: a tag associated with a repo or package that identifies the unique instance or release of the source
 * djht:software: a computational related flaw associated with versions of a repo or package 
-			. has version: a one-to-many relationship between package and version
-			. has STAR: a one-to-many relationship between version and STAR
-			. has fixed version: (if any) a one-to-many relationship between STAR and fixed version
-			. has dependency:
-			. has transitive dependency
+<!-- has version: a one-to-many relationship between package and version
+has STAR: a one-to-many relationship between version and STAR
+has fixed version: (if any) a one-to-many relationship between STAR and fixed version
+has dependency:
+has transitive dependency -->
 ```mermaid
 graph TD
    A((Repo)) -->|rdf:has dependecy| B((ml: version))
