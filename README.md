@@ -119,7 +119,6 @@ mls:Software a sh:NodeShape ;
             sh:path djht:aliases ] ;
     sh:targetClass mls:Software .
 ```
-***
 ---
 ## License
 
