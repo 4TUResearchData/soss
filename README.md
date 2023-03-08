@@ -14,6 +14,8 @@ This project aims to: (1) extract and link scientific software metadata from pac
 
 - Add descriptors on existing RDF data model (reusing existing ontologies)
 - Annotate the software deposits in the 4TUResearchData
+- converting data to RDF and 
+- Use either Shape validators or SPARQL queries
 - Integrate into FAIR evaluator
 
 
