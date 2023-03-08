@@ -30,7 +30,6 @@ This project aims to: (1) extract and link scientific software metadata from pac
 * [ORKG](https://orkg.org)
 * [Codewithpapers](https://paperswithcode.com/)
 
-#### Available datasets
 
 #### Available ontologies
 
@@ -43,7 +42,18 @@ Concepts and properties are annotated with:
 * [OKG-Soft](https://ieeexplore.ieee.org/document/9041835)
 * [ML Schedma Core Specification](http://ml-schema.github.io/documentation/ML%20Schema.html)
 
-***
+#### Data Model
+```mermaid
+graph TD
+   A((Repo)) -->|rdf:has dependecy| B((Version))
+   A((Repo)) -->|has transitive dependency| B
+   C((Package)) -->|has version| B
+   B -->|has software| D((Software))
+   D -->|fixed version| B
+   D --> |has author| E((Person))
+   D --> |has source| F((Source Code))
+```
+
 #### Example RDF (turtle):
 
 ```ttl
