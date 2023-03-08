@@ -1,0 +1,65 @@
+# metamodel_version: 1.7.0
+BASE <http://djht.org/ontology/djht/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX linkml: <https://w3id.org/linkml/>
+PREFIX schema: <http://schema.org/>
+PREFIX mls: <http://www.w3.org/ns/mls#>
+
+
+linkml:String xsd:string
+
+linkml:Integer xsd:integer
+
+linkml:Boolean xsd:boolean
+
+linkml:Float xsd:float
+
+linkml:Double xsd:double
+
+linkml:Decimal xsd:decimal
+
+linkml:Time xsd:dateTime
+
+linkml:Date xsd:date
+
+linkml:Datetime xsd:dateTime
+
+linkml:DateOrDatetime linkml:DateOrDatetime
+
+linkml:Uriorcurie IRI
+
+linkml:Curie xsd:string
+
+linkml:Uri IRI
+
+linkml:Ncname xsd:string
+
+linkml:Objectidentifier IRI
+
+linkml:Nodeidentifier NONLITERAL
+
+<Container> CLOSED {
+    (  $<Container_tes> <softwares> @<Software> * ;
+       rdf:type [ <Container> ] ?
+    )
+}
+
+<Software> CLOSED {
+    (  $<Software_tes> (  schema:name @linkml:String ;
+          <authors> @linkml:String ? ;
+          <categories> @linkml:String ? ;
+          <files> @linkml:Integer ? ;
+          <tags> @linkml:String ? ;
+          <funding> @linkml:String ? ;
+          <references> @linkml:String ? ;
+          <aliases> @linkml:String * ;
+          mls:function @linkml:String ? ;
+          <dependencies> @linkml:Integer ?
+       ) ;
+       rdf:type [ mls:Software ]
+    )
+}
+
+
+

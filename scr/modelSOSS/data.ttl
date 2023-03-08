@@ -1,6 +1,25 @@
-@prefix ns1: <https://w3id.org/linkml/examples/softinfo/:> .
+@prefix djht: <http://djht.org/ontology/djht/> .
+@prefix mls: <http://www.w3.org/ns/mls#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-[] a ns1:Software ;
-    ns1:id "DOI:https://doi.org/10.4121/21557148.v1" ;
-    ns1:title "Python Scripts used in the study" .
+<https://doi.org/10.4121/19145426.v1> a mls:Software ;
+    djht:authors "0000-0002-9994-1462, 0000-0002-9994-XXXXX" ;
+    djht:files 8 ;
+    djht:funding "EU-horizon" ;
+    djht:tags "data science" ;
+    schema:name "Characterizing single-molecule dynamics of viral RNA-dependent RNA polymerases with a multiplexed magnetic tweezers" ;
+    mls:function "1-800" .
+
+<https://doi.org/10.4121/19145426.v2> a mls:Software ;
+    djht:dependencies 90 ;
+    djht:funding "none" ;
+    djht:references "none" ;
+    djht:tags "AI" ;
+    schema:name "Characterizing single-molecule dynamics of viral RNA-dependent RNA polymerases with a multiplexed magnetic tweezers" ;
+    mls:function "1-800" .
+
+[] a djht:Container ;
+    djht:softwares <https://doi.org/10.4121/19145426.v1>,
+        <https://doi.org/10.4121/19145426.v2> .
 

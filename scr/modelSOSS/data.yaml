@@ -1,8 +1,18 @@
 softwares:
   - id: DOI:10.4121/19145426.v1
     title: Characterizing single-molecule dynamics of viral RNA-dependent RNA polymerases with a multiplexed magnetic tweezers
+    authors: 0000-0002-9994-1462, 0000-0002-9994-XXXXX
+    function: 1-800
+    tags: data science
+    funding: EU-horizon
+    references: 
+    files: 8
+
+  - id: DOI:10.4121/19145426.v2
+    title: Characterizing single-molecule dynamics of viral RNA-dependent RNA polymerases with a multiplexed magnetic tweezers
     dependencies: 90
     function: 1-800
-  - id: DOI:10.4121/19145426.v2
-    title: Lois Lane
-    dependencies: 33
+    tags: AI
+    funding: none
+    references: none
+

@@ -1,0 +1,80 @@
+{
+    "$defs": {
+        "Container": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "softwares": {
+                    "items": {
+                        "$ref": "#/$defs/Software"
+                    },
+                    "type": "array"
+                }
+            },
+            "title": "Container",
+            "type": "object"
+        },
+        "Software": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "aliases": {
+                    "description": "other names for the repo",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "authors": {
+                    "type": "string"
+                },
+                "categories": {
+                    "type": "string"
+                },
+                "dependencies": {
+                    "maximum": 200,
+                    "minimum": 0,
+                    "type": "integer"
+                },
+                "files": {
+                    "maximum": 200,
+                    "minimum": 0,
+                    "type": "integer"
+                },
+                "function": {
+                    "pattern": "^[\\d\\(\\)\\-]+$",
+                    "type": "string"
+                },
+                "funding": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "references": {
+                    "type": "string"
+                },
+                "tags": {
+                    "type": "string"
+                },
+                "title": {
+                    "description": "name of the repo",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id",
+                "title"
+            ],
+            "title": "Software",
+            "type": "object"
+        }
+    },
+    "$id": "https://w3id.org/linkml/examples/softwareO",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "additionalProperties": true,
+    "metamodel_version": "1.7.0",
+    "title": "softwareO",
+    "type": "object",
+    "version": null
+}
