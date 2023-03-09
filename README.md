@@ -20,7 +20,9 @@ This project aims to: (1) extract and link scientific software metadata from pac
 
 ## Materials and resources
 
-#### Available software repositories
+#### Available software repositories [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+A list of research software registries (also known as catalog, index, warehouse, repository, hub, platform, and other terms) can be found here: [Awesome Research Software Registries](https://github.com/NLeSC/awesome-research-software-registries) 
+
 * [Research software directory]()
 * [4TUResearchData repository]()
 * [TUD]()
@@ -34,7 +36,7 @@ This project aims to: (1) extract and link scientific software metadata from pac
 #### Available ontologies
 
 Concepts and properties are annotated with:
-* [GUIX graph](https://guix.gnu.org/manual/en/html_node/Invoking-guix-graph.html)
+* [GUIX Package difinitions](https://guix.gnu.org/manual/en/html_node/Defining-Packages.html)
 * [Semanticscience Integrated Ontology (SIO)](https://bioportal.bioontology.org/ontologies/SIO/)
 * [Software Ontology (SWO)](https://www.ebi.ac.uk/ols/ontologies/swo)
 * [Research Software Ontology (RO)](https://wf4ever.github.io/)
