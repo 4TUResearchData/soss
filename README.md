@@ -26,7 +26,7 @@ graph LR
 A[Collect software artefacts] -->B(Identify single-software artefacts)
     B --> C{Processes}
     C -->|data collection| D[inputs API software metadata] --> F(GUIX package definition RDF) --> G(RDF/validation output)
-    C -->|reproducible worflow| E[inputs software files] --> H(computational executable) --> J(JSON output)
+    C -->|verify reproducible worflow| E[inputs software source code] --> H(build computational executable) --> J(JSON output)
     C -->|FAIR calculator| J(JSON output)
 ```
 
