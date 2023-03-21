@@ -25,7 +25,7 @@ From a collection of software projects on 4TU, it produces reproducible sets of 
 graph LR
 A[Collect software artefacts] -->B(Identify single-software artefacts)
     B --> C{Processes}
-    C -->|data collection| D[inputs API software metadata] --> F(GUIX package definition RDF) --> G(RDF/validation output)
+    C -->|data collection| D[list of software artefacts API] --> Z(inspect source code e.g py file, readme for metadata extraction) --> F(GUIX package definition RDF) --> G(RDF/validation output)
     C -->|verify reproducible worflow| E[inputs software source code] --> H(build computational executable) --> J(JSON output)
     C -->|FAIR calculator| J(JSON output)
 ```
