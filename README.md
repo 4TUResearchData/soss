@@ -17,7 +17,9 @@ This project aims to: (1) extract and link scientific software metadata from pac
 - Use either Shape validators or SPARQL queries
 - Integrate into FAIR evaluator
 
-* Overview of the methodology: from a collection of software projects on 4TU, it produces reproducible sets of software artefacts and compare with FAIR evaluator
+## Overview of the methodology: 
+
+From a collection of software projects on 4TU, it produces reproducible sets of software artefacts and compare with FAIR evaluator
 
 ```mermaid
 graph LR
