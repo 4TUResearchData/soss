@@ -17,6 +17,22 @@ This project aims to: (1) extract and link scientific software metadata from pac
 - Use either Shape validators or SPARQL queries
 - Integrate into FAIR evaluator
 
+* Overview of the methodology: from a collection of software projects on 4TU, it produces reproducible sets of software artefacts and compare with FAIR evaluator
+
+```mermaid
+graph LR
+A[Collect software artefacts] -->B(Identify single-software artefacts)
+    B --> C{Processes}
+    C -->|data collection| D[inputs API software metadata] --> F(GUIX package definition RDF) --> G(RDF/validation output)
+    C -->|reproducible worflow| E[inputs software files] --> H(computational executable) --> J(JSON output)
+    C -->|FAIR calculator| J(JSON output)
+```
+
+## Expected contributions
+
+* 1. A framework to generate the dataset in RDF. It includes scripts for the collection of data and execution of the FAIR tests discrepancies in a sandbox environment
+* 2. Raw data files from the dataset generation that can be reused for futher researcher
+
 
 ## Materials and resources
 
