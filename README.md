@@ -8,15 +8,6 @@ A repository that given an software arfefact DOI, it will computationally reprod
 
 This project aims to: (1) extract and link scientific software metadata from package files in a RDF KG and (2) recreate the software artefacts to compare with FAIR Maturity Evaluation services.
 
-
-## Planning
-
-- Add descriptors on existing RDF data model (reusing existing ontologies)
-- Annotate the software deposits in the 4TUResearchData
-- converting data to RDF and 
-- Use either Shape validators or SPARQL queries
-- Integrate into FAIR evaluator
-
 ## Overview of the methodology: 
 
 From a collection of software projects on 4TU, it produces reproducible sets of software artefacts and compare with FAIR evaluator
@@ -32,8 +23,10 @@ A[Collect software artefacts] -->B(Identify single-software artefacts)
 
 ## Expected contributions
 
-* 1. A framework to generate the dataset in RDF. It includes scripts for the collection of data and execution of the FAIR tests discrepancies in a sandbox environment
-* 2. Raw data files from the dataset generation that can be reused for futher researcher
+
+* 1. Add descriptors on existing RDF data model (reusing existing ontologies)
+* 2. A framework to generate the dataset in RDF. It includes scripts for the collection of data and execution of the FAIR tests discrepancies in a sandbox environment
+* 3. Raw data files from the dataset generation that can be reused for futher researcher
 
 
 ## Materials and resources
