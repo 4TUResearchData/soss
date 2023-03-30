@@ -23,8 +23,9 @@ A[Collect software artefacts] -->B(Identify single-software artefacts)
 
 ## Expected contributions
 
+Support researchers reusing software artefacts by adding discoverability, traceability and reproducibility functionalities in 4TUResearchData using semantic technology approaches:
 
-* 1. Add descriptors on existing RDF data model (reusing existing ontologies)
+* 1. Add descriptors on the existing RDF data model (annotate with [GUIX Package standards](https://guix.gnu.org/manual/en/html_node/Defining-Packages.html))
 * 2. A framework to generate the dataset in RDF. It includes scripts for the collection of data and execution of the FAIR tests discrepancies in a sandbox environment
 * 3. Raw data files from the dataset generation that can be reused for futher researcher
 
