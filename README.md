@@ -10,14 +10,14 @@ This project aims to: (1) extract and link scientific software metadata from pac
 
 ## Overview of the methodology: 
 
-From a collection of software projects on 4TU, it produces reproducible sets of software artefacts and compare with FAIR evaluator
+From a collection of software projects on 4TU, it produces reproducible sets of software artefacts and compare with FAIR evaluator.
 
 ```mermaid
 graph LR
 A[Collect software artefacts] -->B(Identify single-software artefacts)
     B --> C{Processes}
-    C -->|data collection| D[Select software artefacts API-4TU] --> Z(inspect source code e.g py file, readme for metadata extraction) --> F(GUIX package definition RDF) --> G(RDF/validation output)
-    C -->|verify reproducible worflow| E[inputs software source code] --> H(build computational executable) --> J(JSON output)
+    C -->|data collection| D[Scan software artefacts API-4TU] --> Z(inspect source code e.g py file, readme for metadata extraction) --> F(GUIX package definition RDF) --> G(RDF/validation output)
+    C -->|verify reproducible worflow| E[Scan open-source software] --> U(Select projects that are able to run as command-line tool) --> H(run command-line) --> J(JSON output)
     C -->|FAIR calculator| J(JSON output)
 ```
 
